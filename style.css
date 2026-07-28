@@ -889,4 +889,10 @@ p {
     }
 
 }
+@media (max-width:600px){
+    .balloons span,
+    .corner-balloon{
+        animation-duration:12s;
+    }
+}
 
