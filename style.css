@@ -795,3 +795,57 @@ p {
     cursor: pointer !important;
     user-select: none;
 }
+@media (max-width:600px){
+
+    body{
+        height:auto;
+        min-height:100vh;
+        overflow-y:auto;
+        justify-content:flex-start;
+        align-items:center;
+        padding-top:40px;
+    }
+
+    body > h1{
+        font-size:32px;
+        width:90%;
+        text-align:center;
+        margin:0;
+        top:0;
+        line-height:1.2;
+    }
+
+    .tagline{
+        font-size:18px;
+        text-align:center;
+        margin-top:12px;
+        margin-bottom:40px;
+    }
+
+    .envelope{
+        position:relative;
+        top:auto;
+        left:auto;
+        transform:none;
+        width:260px;
+        height:165px;
+        margin:0 auto;
+    }
+
+    .letter{
+        height:60vh;
+        width:270px;
+        overflow-y:auto;
+        overflow-x:hidden;
+    }
+
+    .envelope.open .letter{
+        bottom:20px;
+    }
+
+}
+.envelope,
+.envelope * {
+    cursor:pointer !important;
+    user-select:none;
+}
