@@ -811,4 +811,38 @@ p {
     cursor:pointer !important;
     user-select:none;
 }
+@media (max-width:600px){
+
+    .letter{
+        width:78vw;
+        height:55vh;
+        min-height:0;
+        padding:16px;
+        overflow:hidden;
+        box-sizing:border-box;
+    }
+
+    .letter-copy{
+        height:100%;
+        overflow-y:auto;
+        overflow-x:hidden;
+        padding-right:8px;
+    }
+
+    .letter-copy h1{
+        font-size:20px;
+    }
+
+    .letter-copy p{
+        font-size:13px;
+        line-height:1.4;
+        margin:6px 0;
+    }
+
+    .envelope.open .letter{
+        bottom:10px;
+        transform:translateY(0) scale(1);
+    }
+
+}
 
