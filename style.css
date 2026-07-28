@@ -895,4 +895,16 @@ p {
         animation-duration:12s;
     }
 }
+.rsvp-option,
+button,
+.envelope,
+.envelope *{
+    -webkit-tap-highlight-color: transparent;
+}
+
+.rsvp-option{
+    -webkit-user-select:none;
+    user-select:none;
+    touch-action:manipulation;
+}
 
