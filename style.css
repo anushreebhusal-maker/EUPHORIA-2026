@@ -798,49 +798,69 @@ p {
 @media (max-width:600px){
 
     body{
-        height:auto;
-        min-height:100vh;
-        overflow-y:auto;
-        justify-content:flex-start;
+        height:100vh;
+        overflow:hidden;
+        display:flex;
+        justify-content:center;
         align-items:center;
-        padding-top:40px;
+        flex-direction:column;
     }
 
     body > h1{
-        font-size:32px;
-        width:90%;
+        position:absolute;
+        top:70px;
+        width:100%;
         text-align:center;
+        font-size:32px;
         margin:0;
-        top:0;
         line-height:1.2;
     }
 
     .tagline{
-        font-size:18px;
+        position:absolute;
+        top:125px;
+        width:100%;
         text-align:center;
-        margin-top:12px;
-        margin-bottom:40px;
+        font-size:18px;
+        margin:0;
     }
 
     .envelope{
-        position:relative;
-        top:auto;
-        left:auto;
-        transform:none;
+        position:absolute;
+        top:230px;
+        left:50%;
+        transform:translateX(-50%);
         width:260px;
         height:165px;
-        margin:0 auto;
+    }
+
+    .flap{
+        border-left-width:130px;
+        border-right-width:130px;
+        border-top-width:85px;
     }
 
     .letter{
-        height:60vh;
         width:270px;
+        height:55vh;
+        min-height:0;
+        padding:18px;
         overflow-y:auto;
         overflow-x:hidden;
     }
 
     .envelope.open .letter{
-        bottom:20px;
+        bottom:10px;
+        transform:translateY(0);
+    }
+
+    .letter-copy h1{
+        font-size:20px;
+    }
+
+    .letter-copy p{
+        font-size:14px;
+        line-height:1.4;
     }
 
 }
