@@ -879,4 +879,14 @@ p {
     }
 
 }
+@media (max-width:600px){
+
+    .letter-copy h1{
+        font-size:16px;
+        line-height:1.2;
+        margin-top:5px;
+        margin-bottom:8px;
+    }
+
+}
 
